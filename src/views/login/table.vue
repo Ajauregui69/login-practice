@@ -5,7 +5,7 @@
         number: "1",
         ability: "Grass",
         type: "Grass",
-        type2: " ",
+        type2: "Poison",
         color: "#B200FF",
         },
         {
@@ -13,7 +13,7 @@
         number: "2",
         ability: "Grass",
         type: "Grass",
-        type2: " ",
+        type2: "Poison",
         },
         {
         name: "Venasaur",
@@ -27,28 +27,28 @@
         number: "4",
         ability: "Grass",
         type: "Fire",
-        type2: " ",
+        type2: "Poison",
         },
         {
         name: "Charmeleon",
         number: "5",
         ability: "Grass",
         type: "Fire",
-        type2: " ",
+        type2: "Poison",
         },
         {
         name: "Charmeleon",
         number: "5",
         ability: "Grass",
         type: "Fire",
-        type2: " ",
+        type2: "Fly",
         },
         {
         name: "Charmeleon",
         number: "5",
         ability: "Grass",
         type: "Fire",
-        type2: " ",
+        type2: "Fly",
         },
     ]
 </script>
@@ -64,7 +64,7 @@
                     <td class="font-semibold text-2xl font-mono color-#000000  mt-1% ml-2% border-none w-15%">{{ pokemon.name }}</td>
                     <td class="font-semibold text-2xl font-mono color-#000000  ml-5% p-8px w-10%">#{{ pokemon.number }}</td>
                     <td class="font-semibold text-2xl font-mono color-#000000  p-8px w-15%">{{ pokemon.ability }}</td>
-                    <div class="flex w-35% ml-10%">
+                    <div class="flex w-35% ml-10% h-45%">
                         <div class="content-center justify-center h-100% w-35% bg-#2EB712 b-rd-5px">
                             <td class="font-semibold text-2xl font-mono color-#FFFFFF  m-15px p-8px ">{{ pokemon.type }}</td>
                         </div>
