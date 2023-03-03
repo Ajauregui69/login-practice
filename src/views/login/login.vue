@@ -1,11 +1,10 @@
 <script setup>
-import boxC from '../../components/container.vue'
+import customCard from '../../components/container.vue'
 import inP from '../../components/inputs.vue'
 </script>
 
 <template>
-  <boxC style="height: 514px; width: 495px;" dimentions="height: 434px; width: 369.15px; margin: 40px 62.92px">
-    <!-- atributo style recibe las dimensiones de la caja externa y dimentions recibe los valores de la caja interna (donde va el formulario) -->
+  <customCard dimentions="height: 514px; width: 495px;" margins="height: 434px; width: 369.15px; margin: 40px 62.92px">
 
     <form class="flex-column text-center h-434px w-369.15px" action="">
       <div class="display-flex h-48px text-23px ml-62.92px">
@@ -26,7 +25,8 @@ import inP from '../../components/inputs.vue'
         </RouterLink>
       </div>
     </form>
-  </boxC>
+    
+  </customCard>
 </template>
 
 <style scoped></style>
