@@ -1,7 +1,7 @@
 <script setup>
 
 defineProps({
-    tipo:{
+    type:{
         type: String,
         default:'text',
         validator: value => ['email', 'text', 'password'].includes(value)
@@ -15,7 +15,7 @@ defineProps({
 <template>
     <div class="flex-column h-66px w-369.15px br-5px">
         <label class="text-start mb-8px mt-11px" >{{ text }}</label>
-        <input id="div2" :type="tipo" name="input" :style="estilo"  :placeholder="text">
+        <input id="div2" :type="type" name="input" :placeholder="text">
     </div>
 
 
