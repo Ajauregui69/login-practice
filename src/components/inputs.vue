@@ -1,3 +1,31 @@
+<!--
+        Custom button component
+---------------------------------------
+
+This component receives several props to
+modify it's behavior and it has some fixed
+styles like the border-radius property and
+the font. 
+
+
+/* How to use the component / 
+
+-> Import the component first:
+import customInput from '../../components/inputs.vue';
+
+-> Place the component like a HTML tag:
+<customInput/>
+
+-> Change the props into the custom HTML tag
+
+<customInput type="email" text="" />
+
+/ Props */
+
+type - Changed the type of input ( text, email, password...etc.)
+text - Changed the Name of te label and PlaceHolder
+-->
+
 <script setup>
 
 defineProps({
