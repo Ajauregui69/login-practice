@@ -39,18 +39,22 @@ defineProps({
         validator: value => ['email', 'text', 'password'].includes(value)
     },
     text: 'text',
-    dimentions: 'dimentons'
+    dimentions: 'dimentions'
 
 })
 
 </script>
 
 <template>
-    <div class="flex-column h-66px w-378.1px br-5px mb-11px mt-11px">
-        <div class="flex-column h-66px w-369.15px br-5px ">
-            <label class="text-start mb-8px mt-0 font-bold font-400 ">{{ text }}</label>
-            <input :type="type" :placeholder="text" :style="dimentions">
-        </div>
+    <!-- <div class="flex-column h-66px w-378.1px br-5px mb-11px mt-11px">
+                    <div class="flex-column h-66px w-369.15px br-5px ">
+                        <label class="text-start mb-8px mt-0 font-bold font-400 ">{{ text }}</label>
+                        <input :type="type" :placeholder="text" :style="dimentions">
+                    </div>
+                </div> -->
+    <div class="flex-column h-66px w-369.15px br-5px mb-11px mt-11px">
+        <label class="text-start mb-8px mt-0 font-bold font-400 ">{{ text }}</label>
+        <input :type="type" :placeholder="text" :style="dimentions">
     </div>
 </template>
 
@@ -71,8 +75,6 @@ input {
     padding: 12px;
     width: 354.1px;
     height: 20px;
-    width: 373.1px;
-    height: 41px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
