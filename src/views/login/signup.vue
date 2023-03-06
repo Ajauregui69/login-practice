@@ -1,6 +1,6 @@
 <script setup>
 import customCard from '../../components/container.vue';
-import inputs from '../../components/inputs.vue';
+import customInput from '../../components/inputs.vue';
 import customBtn from "../../components/button.vue"
 
 </script>
@@ -10,14 +10,15 @@ import customBtn from "../../components/button.vue"
 
     <form>
 
-      <h1 class="display-flex display-start color-black text-42px font-bold h-70.45px mb-45.3px">Sign Up</h1>
+      <h1 class="display-flex display-start text-center color-black text-42px mt-0 font-bold mb-45.3px font-roboto ">Sign
+        Up
+      </h1>
 
-
-      <inputs type="text" text="Full name" />
-      <inputs type="mail" text="Email" />
-      <inputs type="text" text="Username" />
-      <inputs type="password" text="Password" />
-      <inputs type="password" text="Password" />
+      <customInput type="text" text="Full name" />
+      <customInput type="mail" text="Email" />
+      <customInput type="text" text="Username" />
+      <customInput type="password" text="Password" />
+      <customInput type="password" text="Repeat Password" />
       <customBtn class="mt-57.33px" btnText="Sign up"
         style="height: 43.87px; width: 146.82px; background-color: #4339F2; border: #4339F2; color: white;">
 
@@ -28,4 +29,9 @@ import customBtn from "../../components/button.vue"
 </template>
 
 
-<style scoped></style>
+
+<style scoped>
+h1 {
+  font-family: roboto;
+}
+</style>
