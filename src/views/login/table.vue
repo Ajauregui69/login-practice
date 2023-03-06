@@ -29,7 +29,7 @@ let pokemons = [
     },
     {
         name: "Blastoise",
-        number: "2",
+        number: "3",
         ability: "Aerilate",
         type: "WATTER",
         type2: "NORMAL",
@@ -45,9 +45,21 @@ let pokemons = [
         ability: "Aerilate",
         type: "FIGTH",
         type2: "FLY",
-        style: "h-26px w-82px bg-#900C3F b-rd-5px pl-11.5px content-center",
+        style: "h-26px w-82px bg-#900C3F b-rd-5px pl-11.5px",
         style2: "h-26px w-82px b-rd-5px pl-11.5px ml-40px bg-#C9EAEE",
         pImage: "/src/assets/images/hawlucha.png",
+        tImage1: "/src/assets/images/grass.png",
+        tImage2: "/src/assets/images/Vector.png",
+    },
+    {
+        name: "Bulbasaur",
+        number: "5",
+        ability: "Adapt",
+        type: "GRASS",
+        type2: "POISON",
+        style: "h-26px w-82px bg-#4BA85F b-rd-5px pl-11.5px",
+        style2: "h-26px w-82px b-rd-5px pl-11.5px ml-40px bg-#8623B5",
+        pImage: "/src/assets/images/bulbasaur.png",
         tImage1: "/src/assets/images/grass.png",
         tImage2: "/src/assets/images/Vector.png",
     },
@@ -56,8 +68,8 @@ let pokemons = [
 </script>
 
 <template >
-    <div class="flex bg-#F6F6F6 w-1348px h-auto  p-10% ">
-        <table class="ml--8% mt--13px">
+    <div class="flex bg-#F6F6F6 w-91.5% h-auto mt-111px ml-132px">
+        <table class="mt-5px ml-36px">
             <tr class="" v-for="pokemon in pokemons">
                 <pokemonComp v-bind:pokemon="pokemon" />
             </tr>
