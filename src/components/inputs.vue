@@ -8,7 +8,11 @@ styles like the border-radius property and
 the font. 
 
 
+<<<<<<< HEAD
 /* How to use the component */ 
+=======
+/* How to use the component / 
+>>>>>>> f7ae5bfcc70ec8870f439b5f6903027d3d8b14fc
 
 -> Import the component first:
 import customInput from '../../components/inputs.vue';
@@ -20,7 +24,11 @@ import customInput from '../../components/inputs.vue';
 
 <customInput type="text" text="Full name" dimentions="width: 500px; height: 41px" />
 
+<<<<<<< HEAD
 /* Props */
+=======
+/ Props */
+>>>>>>> f7ae5bfcc70ec8870f439b5f6903027d3d8b14fc
 
 type - Changed the type of input ( text, email, password...etc.)
 text - Changed the Name of te label and PlaceHolder
@@ -46,7 +54,11 @@ defineProps({
 </script>
 
 <template>
+<<<<<<< HEAD
     <div class="flex-column h-66px w-378.1px br-5px mb-11px mt-11px">
+=======
+    <div class="flex-column h-66px w-369.15px br-5px mb-11px mt-11px">
+>>>>>>> f7ae5bfcc70ec8870f439b5f6903027d3d8b14fc
         <label class="text-start mb-8px mt-0 font-bold font-400 ">{{ text }}</label>
         <input :type="type" :placeholder="text" :style="dimentions">
     </div>
@@ -66,9 +78,14 @@ label {
 
 input {
     display: flex;
+<<<<<<< HEAD
     padding: 12px;
     width: 354.1px;
     height: 20px;
+=======
+    width: 373.1px;
+    height: 41px;
+>>>>>>> f7ae5bfcc70ec8870f439b5f6903027d3d8b14fc
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);

@@ -1,6 +1,7 @@
 <script setup>
 import customCard from '../../components/container.vue'
 import inP from '../../components/inputs.vue'
+import customBtn from "../../components/button.vue"
 </script>
 
 <template>
@@ -15,8 +16,8 @@ import inP from '../../components/inputs.vue'
       <inP type="password" text="Password" class="mt-42px"></inP>
 
       <div class=" flex justify-evenly mt-42px">
-        <input class="b-rd-7px b-0px bg-#4339F2 h-50px w-146.82px c-white font-sans text-14px" type="submit" value="Login">
-        <button class="flex b-rd-7px b-2px bg-white text-#4339F2 b-#4339F2 h-50px w-146.82px justify-center items-center font-sans font-semibold text-14px" >Sing Up</button>
+        <customBtn btnText="Login" style="height: 50px; width: 146.82px; background-color: #4339F2; border-color: #4339F2; color: #FFFFFF;"/>
+        <customBtn btnText="Sing Up" style="height: 50px; width: 146.82px; background-color: #FFFFFF; border-color: #4339F2; color: #4339F2;"/>
       </div>
 
       <div class="mt-42px">
