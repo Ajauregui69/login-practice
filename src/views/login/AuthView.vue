@@ -24,10 +24,14 @@ Example:
 </customCard>
 
 -->
-<script setup></script>
+<script setup>
+import { RouterView } from "vue-router";
+</script>
 
 <template>
-  <div class="drop-shadow bg-red shadow-md b-rd-8px">
-    <slot></slot>
+  <div class="bg-#F8F8F8 flex h-screen w-screen justify-center items-center">
+    <div class="drop-shadow bg-white shadow-md b-rd-8px">
+      <RouterView />
+    </div>
   </div>
 </template>

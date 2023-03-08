@@ -1,14 +1,10 @@
 <script setup>
-import CustomCard from "../../components/CustonCard.vue";
 import customBtn from "../../components/button.vue";
 import customInput from "../../components/inputs.vue";
 </script>
 
 <template>
-  <CustomCard
-    dimentions="height: 550px; width: 495px;"
-    margins="height: 439px; width: 369.15px; margin: 51px 62.92px"
-  >
+  
     <form>
       <div class="text-left mb-40.6px">
         <!-- Card title -->
@@ -45,7 +41,6 @@ import customInput from "../../components/inputs.vue";
         />
       </div>
     </form>
-  </CustomCard>
 </template>
 
 <style scoped></style>

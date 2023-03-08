@@ -1,13 +1,12 @@
 <script setup>
 import inP from "../../components/inputs.vue";
 import customBtn from "../../components/button.vue";
-
 </script>
 
 <template>
   <form action="">
     <div class="display-flex h-48px text-23px ml-62.92px">
-      <h1 v-if="flag" class="font-bold text-42px">Login Form</h1>
+      <h1 class="font-bold text-42px">Login Form</h1>
     </div>
 
     <inP type="text" text="Username" class="mt-42px"></inP>
