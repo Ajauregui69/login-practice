@@ -24,21 +24,10 @@ Example:
 </customCard>
 
 -->
-<script setup>
-defineProps({
-    dimentions: 'dimentions',
-    margins: 'margins'
-})
-</script>
+<script setup></script>
 
 <template>
-    <div class="flex h-screen w-full relative justify-center items-center">
-        <div class="flex w-100% text-center justify-center">
-            <div :style="dimentions" class="flex drop-shadow bg-white shadow-md b-rd-8px">
-                <div :style="margins" class="flex">
-                    <slot></slot>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="drop-shadow bg-red shadow-md b-rd-8px">
+    <slot></slot>
+  </div>
 </template>
