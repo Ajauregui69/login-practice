@@ -6,13 +6,10 @@
 
 <template>
 
-<div class="bg-#F8F8F8 flex h-screen w-screen justify-center items-center">
-    <div :style="dimentions" class="drop-shadow bg-white shadow-md b-rd-8px px-60px py-40px my-width">
-
-        <form class="flex-column" action="" >
-            <div class="mb-15px">
-                <h1 class="display-flex font-bold text-42px font-inter">Update User</h1> 
-            </div>
+    <form class="flex-column w-1000px" action="" >
+        <div class="mb-15px">
+            <h1 class="display-flex font-bold text-42px font-inter">Update User</h1> 
+        </div>
 
             <div class="mb-15px">       
                 <customInput type="text" text="Username" dimentions="width: 480px; height: 20px"/>
