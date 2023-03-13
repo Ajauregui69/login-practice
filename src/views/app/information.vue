@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-screen w-full items-center justify-center">
+  <div class="flex h-100% items-center justify-center">
     <div class="flex items-center justify-center">
       <div class="flex h-169px w-936px bg-#4339F2 text-center items-center b-rd rd-10px border-current-a m-l-200px">  
         <img src="@/assets/pokeball.png" alt="" sizes="h-156px w-141px" class="m-l-30px">
@@ -15,6 +15,6 @@
 
 </template>
 
-  <style scoped>
+  <style scoped>  
   
   </style>

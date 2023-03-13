@@ -1,3 +1,7 @@
+<script>
+import { RouterLink } from "vue-router";
+</script>
+
 <template>
   <div class="bg-#F8F8F8 w-screen">
     <div class="app-container flex flex-row">
@@ -8,18 +12,21 @@
           <img class="p-30px" src="@/assets/images/Logo.png" alt="" />
           <hr class="" />
           <div class="nav-items">
-            <img class="item" src="@//assets/images/avatar.png" alt="" />
-            <img class="item" src="@/assets/images/descargar.png" alt="" />
-            <img class="item" src="@/assets/images/imagen.png" alt="" />
-            <img class="item" src="@/assets/images/calendario.png" alt="" />
-            <img class="item" src="@/assets/images/top.png" alt="" />
-            <img class="item" src="@/assets/images/tiempo.png" alt="" />
+            <RouterLink to="/app">
+              <img class="item" src="/avatar.svg" alt="" />
+            </RouterLink>
+            <RouterLink to="/app/information">
+              <img class="item" src="@/assets/images/descargar.png" alt="" />
+            </RouterLink>
+            <RouterLink to="/app/configuration">
+              <img class="item" src="@/assets/images/imagen.png" alt="" />
+            </RouterLink>
           </div>
           <img class="item last-item" src="@/assets/images/confi.png" alt="" />
         </div>
       </div>
-      <div class="app-content">
-        <div class="search-bar">
+      <div class="bg-#F6F6F6 app-content h-100%">
+        <div class="search-bar p-40px">
           <img
             class="flex flex-row w-24px h-24px"
             src="@/assets/images/buscar.png"
@@ -30,7 +37,9 @@
             placeholder="Search"
           />
         </div>
-        <h1>Hola</h1>
+        <div class="main-view p-40px h-100%">
+          <slot></slot>
+        </div>
       </div>
     </div>
   </div>
@@ -39,8 +48,6 @@
 <style lang="scss">
 .app-content {
   width: calc(100% - 200px);
-  height: 100%;
-  padding: 40px;
   .search-bar {
     display: flex;
     height: 100%;
@@ -48,16 +55,15 @@
       width: 100%;
     }
   }
+  .main-view{
+    height: calc(100vh - 200px);
+  }
 }
 
 .nav-items {
   margin: auto 0;
-}
-
-.item {
-  margin: 35px;
-}
-
-.last-item {
+  .item {
+    margin: 35px;
+  }
 }
 </style>

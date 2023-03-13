@@ -1,11 +1,12 @@
 <script setup>
-import { RouterView } from 'vue-router'
-import SidePanel from './components/SidePanel.vue'
-
+import { RouterView } from "vue-router";
+import SidePanel from "./components/SidePanel.vue";
 </script>
 
 <template>
- <SidePanel />
+  <SidePanel>
+    <RouterView />
+  </SidePanel>
 </template>
 
 <style scoped>

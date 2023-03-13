@@ -7,7 +7,7 @@
 
 <template>
 
-    <form class="flex-column w-1000px" action="" >
+    <form class="flex-column w-200%" action="" >
         <div class="mb-15px">
             <h1 class="display-flex font-bold text-42px font-inter">Update User</h1> 
         </div>

@@ -63,12 +63,13 @@ let pokemons = [
     tImage2: "/src/assets/images/Vector.png",
   },
 ];
+
 </script>
 
 <template>
-  <div class="flex bg-#F6F6F6 w-91.5% h-auto mt-111px ml-132px">
-    <table class="mt-5px ml-36px">
-      <tr class="" v-for="pokemon in pokemons">
+  <div class="fle h-100%">
+    <table class="w-100%">
+      <tr class="" v-for="(pokemon, $p) in pokemons" :key="$p">
         <pokemonComp v-bind:pokemon="pokemon" />
       </tr>
     </table>

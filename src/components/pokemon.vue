@@ -13,7 +13,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="flex content-center bg-#FFFFFF mb-40px h-110px w-1300PX b-rd-10px pl-7px">
+    <div class="flex content-center bg-#FFFFFF mb-40px h-110px b-rd-10px">
         <td class="font-semibold text-2xl font-mono color-#000000 border-none w-7%"><img alt="Vue logo" class="logo"
                 :src="pokemon.pImage" width="112" height="94" /></td>
         <div class="flex-none ml-25px mt-31px w-115px">
