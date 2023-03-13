@@ -4,7 +4,7 @@ import customBtn from "../../components/button.vue";
 </script>
 
 <template>
-  <form action="">
+  <form @submit.prevent="">
     <div class="display-flex h-48px text-23px ml-62.92px">
       <h1 class="font-bold text-42px">Login Form</h1>
     </div>
@@ -15,6 +15,7 @@ import customBtn from "../../components/button.vue";
     <div class="flex justify-evenly mt-42px">
       <customBtn
         btnText="Login"
+        goTo="/app"
         style="
           height: 50px;
           width: 146.82px;
@@ -25,6 +26,7 @@ import customBtn from "../../components/button.vue";
       />
       <customBtn
         btnText="Sing Up"
+        goTo="/signup"
         style="
           height: 50px;
           width: 146.82px;
@@ -38,7 +40,7 @@ import customBtn from "../../components/button.vue";
     <div class="mt-42px">
       <RouterLink
         class="font-sans font-semibold text-14px c-#4339f2 underline"
-        to="/recoverPass"
+        to="/recover"
       >
         Forgot password?
       </RouterLink>

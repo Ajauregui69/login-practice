@@ -6,7 +6,7 @@ import customInput from '../../components/inputs.vue'
 <template>
 
 
-    <form>
+    <form @submit.prevent="">
 
       <div class="text-left mb-79.25px"> <!-- Card title -->
         <h1 class="text-42px font-sans">Recover</h1>
@@ -17,8 +17,8 @@ import customInput from '../../components/inputs.vue'
       </div>
 
       <div class="flex justify-between"> <!-- Buttons div -->
-        <customBtn btnText="Send" style="height: 43.87px; width: 146.82px; background-color: #4339F2; border-color: #4339F2; color: white;"/>
-        <customBtn btnText="Login" style="height: 43.87px; width: 146.82px; background-color: white; border-color: #4339F2; color: #4339F2;"/>
+        <customBtn btnText="Send" goTo="/recoverPass" style="height: 43.87px; width: 146.82px; background-color: #4339F2; border-color: #4339F2; color: white;"/>
+        <customBtn btnText="Login" goTo="/" style="height: 43.87px; width: 146.82px; background-color: white; border-color: #4339F2; color: #4339F2;"/>
       </div>
 
     </form>

@@ -1,9 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
-import LoginView from "../views/login/login.vue";
-import Signup from "../views/login/signup.vue";
 import Login from "../Login.vue";
 import App from "../App.vue";
 import AuthView from "../views/login/AuthView.vue"
+import LoginView from "../views/login/login.vue";
+import Signup from "../views/login/signup.vue";
+import recover from "../views/login/recover.vue"
+import recoverPass from "../views/login/recoverPass.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,6 +30,16 @@ const router = createRouter({
               name: "signup",
               component: Signup,
             },
+            {
+              path: '/recover',
+              name: 'recover',
+              component: recover
+            },
+            {
+              path: '/recoverPass',
+              name: 'recoverPass',
+              component: recoverPass
+            }
           ]
         }
       ],

@@ -40,19 +40,32 @@ NOTE: You can add more style props to the HTML tag if it's needed
  -->
 
 <script setup>
-    defineProps({
-        btnText: {
-            type: String,
-            required: true
-        },
-        style: 'style',
-    })
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+defineProps({
+  btnText: {
+    type: String,
+    required: true,
+  },
+  style: "style",
+  goTo: {
+    type: String,
+    required: false,
+    default: "",
+  },
+});
+
+function to(id) {
+    router.push(id)
+}
 </script>
 
 <template>
-    <button class="b-rd-10px font-mono" :style="style">{{btnText}}</button>
+  <button @click="to(goTo)" class="b-rd-10px font-mono" :style="style">
+    {{ btnText }}
+  </button>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

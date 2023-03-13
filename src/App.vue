@@ -1,25 +1,11 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-import recover from './views/login/recover.vue';
-import recoverPass from './views/login/recoverPass.vue';
+import { RouterView } from 'vue-router'
+import SidePanel from './components/SidePanel.vue'
 
 </script>
 
 <template>
-  <header>
-   <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="lo que quiera" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-  <RouterView />
+ <SidePanel />
 </template>
 
 <style scoped>

@@ -30,7 +30,7 @@ import { RouterView } from "vue-router";
 
 <template>
   <div class="bg-#F8F8F8 flex h-screen w-screen justify-center items-center">
-    <div class="drop-shadow bg-white shadow-md b-rd-8px">
+    <div class="drop-shadow bg-white shadow-md b-rd-8px px-60px py-40px">
       <RouterView />
     </div>
   </div>
